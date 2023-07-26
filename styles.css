@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+  }
+  
+  .countdown-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .countdown-timer {
+    display: flex;
+    flex-wrap: wrap; /* Allow blocks to wrap to the next line on smaller screens */
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+  }
+  
+  .time-block {
+    margin: 10px; /* Add some space between time blocks */
+  }
+  
+  .time-block .time-label {
+    font-size: 16px;
+  }
+  
+  .time-block .days,
+  .time-block .hours,
+  .time-block .minutes,
+  .time-block .seconds {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .timer-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow buttons to wrap to the next line on smaller screens */
+    margin-top: 20px;
+  }
+  
+  #inputTime {
+    margin: 5px;
+    padding: 5px;
+  }
+  
+  button {
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+    margin: 5px; /* Add some space between buttons */
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Media Queries for responsiveness */
+  
+  @media screen and (max-width: 600px) {
+    .time-block .days,
+    .time-block .hours,
+    .time-block .minutes,
+    .time-block .seconds {
+      font-size: 28px;
+    }
+  
+    .time-block .time-label {
+      font-size: 14px;
+    }
+  
+    #inputTime {
+      margin: 5px 0;
+    }
+  }
+  
